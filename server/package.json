@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backed for my stack-up application",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express.",
+    "javascript",
+    "stack-up"
+  ],
+  "author": "Sankar Gnanasekar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
