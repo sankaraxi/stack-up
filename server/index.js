@@ -10,6 +10,10 @@ app.use("/test",(req, res) => {
     res.send('Hello World from my first official server!');
 })
 
+app.get('/middle', (req, res) => {
+    
+    res.send('Hello World from my first official server!');
+})
 app.get('/user', (req, res) => {
     res.send({firstname: 'Sankar', lastname: 'Gnanasekar'});
 });
