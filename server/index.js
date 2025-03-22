@@ -3,18 +3,19 @@ const connectDB = require('./src/config/database');
 const User = require('./src/models/user');
 const app = express();
 
-app.post('/signup', (req, res) => {
-    const user = new User({
-        firstName: "MS",
-        lastName: "Dhoni",
-        email: "msdhoni.csk@gmail.com",
-        password: "sakshi",
-        age: 40,
-        gender: "Male"
-    })
 
-    user.save();
-    res.send("User created successfully");
+app.use(express.json());
+
+app.post('/signup', (req, res) => {
+    // console.log(req.body);
+    const user = new User(req.body)
+    try{
+        user.save();
+        res.send("User created successfully");
+    }catch(err){
+        res.status(400
+        ).send(err);  
+    }
 })
 
 connectDB().then(() => {
