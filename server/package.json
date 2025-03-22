@@ -4,7 +4,7 @@
   "description": "backed for my stack-up application",
   "main": "index.js",
   "scripts": {
-    "dev" : "nodemon index.js",
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "keywords": [
@@ -16,6 +16,7 @@
   "author": "Sankar Gnanasekar",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mongoose": "^8.12.2"
   }
 }
